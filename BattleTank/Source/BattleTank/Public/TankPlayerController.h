@@ -14,7 +14,9 @@ UCLASS()
 class BATTLETANK_API ATankPlayerController : public APlayerController
 {
 	GENERATED_BODY()
-	
+
+	virtual void BeginPlay() override;
+
 	ATank * GetContolledTank() const;
 	
 	
